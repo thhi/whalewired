@@ -65,3 +65,7 @@ environments {
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'com.whalewired.User'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'com.whalewired.UserRole'
 grails.plugins.springsecurity.authority.className = 'com.whalewired.Role'
+
+//Added for Twitter Bootstrap Plugin
+grails.plugins.twitterbootstrap.fixtaglib = true
+grails.plugins.twitterbootstrap.defaultBundle = 'bundle_bootstrap'
