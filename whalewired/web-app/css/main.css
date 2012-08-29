@@ -6,9 +6,8 @@
 .content {
 }
 
-.content h1 {
-	border-bottom: 1px solid #CCCCCC;
-	margin: 0.8em 1em 0.3em;
+.content h1, h2 {
+	margin: 0.8em 1em 25px 0px;
 	padding: 0 0.25em;
 }
 
@@ -17,20 +16,14 @@
 }
 
 .footer {
-	background: #abbf78;
-	color: #000;
 	clear: both;
 	font-size: 0.8em;
 	padding: 1em;
 	min-height: 1em;
 }
 
-.footer a {
-	color: #255b17;
-}
-
 .spinner {
-	background: url(../images/spinner.gif) 50% 50% no-repeat transparent;
+	background: url(../images/spinner.gi	f) 50% 50% no-repeat transparent;
 	height: 16px;
 	width: 16px;
     padding: 0.5em;
@@ -46,11 +39,8 @@
 a.home, a.list, a.create, a.logEvent, a.bookmark, a.applications, a.clients {
 	background-position: 0.7em center;
 	background-repeat: no-repeat;
-	text-indent: 25px;
-}
-
-a.home {
-	background-image: url(../images/skin/house.png);
+	text-indent: 10px;
+	margin: 3px 0px 0px 0px;
 }
 
 a.list {
@@ -260,6 +250,7 @@ table {
 	border-top: 1px solid #DFDFDF;
 	border-collapse: collapse;
 	width: 100%;
+	margin: 0 0;
 }
 
 tr {
@@ -466,22 +457,6 @@ a.skip {
 	
 }
 
-a.logEvent {
-	background-image: url(../images/debug_view.png);
-}
-
-a.bookmark {
-	background-image: url(../images/bookmark.jpg);
-}
-
-a.applications {
-	background-image: url(../images/window_earth.png);
-}
-
-a.clients {
-	background-image: url(../images/clients.png);
-}
-
 .ui-tooltip-content {
     background-color: window !important;
     border-color: window !important;
@@ -506,4 +481,10 @@ a.clients {
 .createIssuePanel input[type=text], .createIssuePanel textarea, .createIssuePanel select {
 	display: block;
 	width: 100%;
+}
+
+
+.optionPanel {
+	float: left;
+	padding: 0px 0px 0px 5px;
 }

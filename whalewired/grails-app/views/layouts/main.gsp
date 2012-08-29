@@ -21,7 +21,6 @@
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'kendo.common.min.css')}"	type="text/css" />
 <link rel="stylesheet"	href="${resource(dir: 'css', file: 'kendo.default.min.css')}" type="text/css" />
 <link rel="stylesheet" href="${resource(dir: 'css', file: 'jquery.qtip.min.css')}"type="text/css" />
-<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 <!-- 		<link rel="stylesheet" href="${resource(dir: 'css', file: 'mobile.css')}" type="text/css"> -->
 <g:javascript src="jquery.min.js" library="jquery" />
 <g:javascript src="application.js" />
@@ -29,7 +28,14 @@
 <g:javascript src="jquery.qtip.min.js" />
 
 <!-- Loading Simplenso Bootstrap Template. See SimplensoResources.groovy -->
-<r:require modules="simplenso" />
+<g:javascript src="bootstrap.js" />
+<g:javascript src="bootstrap.min.js" />
+<link rel="stylesheet"	href="${resource(dir: 'css', file: 'bootstrap.css')}" type="text/css" />
+<link rel="stylesheet"	href="${resource(dir: 'css', file: 'simplenso.css')}" type="text/css" />
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'themes/cerulean/bootstrap.min.css')}" type="text/css" />
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'themes/cerulean/simplenso.cerulean.css')}" type="text/css">
+
+<link rel="stylesheet" href="${resource(dir: 'css', file: 'main.css')}" type="text/css">
 
 <g:setProvider library="jquery" />
 <g:layoutHead />
@@ -60,30 +66,22 @@
 				</a> <a href="${createLinkTo(dir: '/')}" class="brand"><img
 					src="${resource(dir: 'images', file: 'whalewired_logo.png')}"
 					alt="WhaleWired" style="height: 26px;" /></a>
-				<div class="btn-group pull-right">
-					<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-						<i class="icon-user"></i> John Doe <span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
-						<li><a href="#">Profile</a></li>
-						<li><a href="#">Settings</a></li>
-						<li><a class="cookie-delete" href="#">Delete Cookies</a></li>
-						<li class="divider"></li>
-						<li><a href="login.html">Logout</a></li>
+				<div class="pull-right">
+					<ul class="nav">
+						<li style="float: right;"><a class="clients"
+								href="${createLink(uri: '/logClients/')}"><i class="icon-hdd icon-white"></i> Client setup</a></li>
 					</ul>
 				</div>
 				<div class="nav-collapse">
 					<ul class="nav">
-						<li><a class="home" href="${createLink(uri: '/')}"><g:message
+						<li><a class="home" href="${createLink(uri: '/')}"><i class="icon-home icon-white"></i> <g:message
 									code="default.home.label" /></a></li>
 						<li><a class="logEvent"
-							href="${createLink(uri: '/logEvent/list')}">Events</a></li>
+							href="${createLink(uri: '/logEvent/list')}"><i class="icon-bullhorn icon-white"></i> Events</a></li>
 						<li><a class="bookmark"
-							href="${createLink(uri: '/bookmarkLogEvent/list')}">Bookmarks</a></li>
+							href="${createLink(uri: '/bookmarkLogEvent/list')}"><i class="icon-bookmark icon-white"></i> Bookmarks</a></li>
 						<li><a class="applications"
-							href="${createLink(uri: '/logApplication/list')}">Applications</a></li>
-						<li style="float: right;"><a class="clients"
-							href="${createLink(uri: '/logClients/')}">Client setup</a></li>
+							href="${createLink(uri: '/logApplication/list')}"><i class="icon-pencil icon-white"></i> Applications</a></li>
 					</ul>
 				</div>
 				<!--/.nav-collapse -->

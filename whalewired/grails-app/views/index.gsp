@@ -4,8 +4,6 @@
 		<meta name="layout" content="main"/>
 		<title>Welcome to WhaleWired on Grails</title>
 		
-		<r:require modules="bootstrap"/>
-		
 		<style type="text/css" media="screen">
 			#status {
 				background-color: #eee;
